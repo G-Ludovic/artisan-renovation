@@ -1,0 +1,15 @@
+figure {
+    border: 1px black solid;
+    height: 530px;
+    box-shadow: 15px 5px grey;
+}
+
+figure img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+h1 {
+    padding: 16px 0;
+}
