@@ -3,10 +3,9 @@ import "./Menu.css"
 interface MenuProps {
     selectedOption : string;
     handleChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
-    selectedArtisan: string;
 }
 
-function Menu ({ selectedOption, handleChange }: MenuProps) {
+function Menu ({ selectedOption, handleChange }: MenuProps, ) {
       
     return (
         <div className="options">
