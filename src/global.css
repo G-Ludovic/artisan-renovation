@@ -8,6 +8,6 @@ body {
 
 main {
     height: 90vh;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }

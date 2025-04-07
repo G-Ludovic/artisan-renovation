@@ -1,15 +1,46 @@
 figure {
+    display: flex;
+    flex-direction: column;
     border: 1px black solid;
-    height: 530px;
     box-shadow: 15px 5px grey;
-}
+    background-color: #ebded4;
+    margin-bottom: 32px;
+    border-radius: 5%;
 
-figure img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
+    img {
+        display: flex;
+        max-height: 150px;
+        max-width: auto;
+        object-fit: cover;
+        border-radius: 5% 5% 0 0;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        color: #4a3931;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 }
 
 h1 {
-    padding: 16px 0;
+    display: flex;
+    padding: 16px;
+    color: #4a3931;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Card { */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* background-color: #ebded4; */
+
+    /* img {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        width: 80px;
+    }
+} */

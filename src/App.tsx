@@ -6,7 +6,7 @@ import "./Card/Card.css"
 
 const arrayOfArtisans = [
   {
-    title: "Eléctricien",
+    title: "Electricien",
     speciality: "electrician",
     imgSrc: "https://cdn.pixabay.com/photo/2017/09/16/14/33/electrician-2755683_1280.jpg"
   },
@@ -28,6 +28,8 @@ function App() {
     
     <>
       <Header />
+      <h1>Artisan Rénovation</h1>
+      
       <main className='app'>
         {arrayOfArtisans.map((element) => {
           return (
