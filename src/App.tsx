@@ -1,4 +1,5 @@
 import './App.css'
+import Header from './Header/Header'
 
 import Card from './Card/Card'
 import "./Card/Card.css"
@@ -24,7 +25,9 @@ const arrayOfArtisans = [
 function App() {
   
   return (
+    
     <>
+      <Header />
       <main className='app'>
         {arrayOfArtisans.map((element) => {
           return (
@@ -32,7 +35,7 @@ function App() {
           )
         })}
       </main>
-    </>
+      </>
   )
 }
 
