@@ -1,18 +1,22 @@
 import "./Card.css";
 
-interface Props {
+interface CardProps {
     title : string;
     speciality: string;
     imgSrc: string;
+    bgColor?: string;
 }
 
-function Card ({ title, speciality, imgSrc }: Props) {
+const Card = ({ title, imgSrc, bgColor }: CardProps) => {
+
     return (
-        <figure>
+        <figure className="card" style={{ backgroundColor: bgColor || "#f0f0f0"}}>
             <img src={imgSrc}/>
-            <h2>{title}</h2>
+            <figcaption>
+                <h2>{title}</h2>
+            </figcaption>
         </figure>
-    )
-}
+    );
+};
 
 export default Card;

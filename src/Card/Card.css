@@ -1,15 +1,13 @@
 figure {
     display: flex;
     flex-direction: column;
-    border: 1px black solid;
     box-shadow: 15px 5px grey;
-    background-color: #ebded4;
-    margin-bottom: 32px;
+    margin-top: 32px;
     border-radius: 5%;
 
     img {
         display: flex;
-        max-height: 150px;
+        max-height: 200px;
         max-width: auto;
         object-fit: cover;
         border-radius: 5% 5% 0 0;
@@ -31,16 +29,17 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Card { */
-    /* justify-content: center; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* background-color: #ebded4; */
+.app {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 16px;
+}
 
-    /* img {
-        display: flex;
-        flex-direction: column;
-        height: 80px;
-        width: 80px;
+/* Desktop : 3 colonnes */
+@media (min-width: 768px) and (min-width: 1024px) {
+    .app {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: minmax(300px, 325px);
     }
-} */
+}

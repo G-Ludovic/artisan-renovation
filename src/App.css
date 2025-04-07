@@ -1,0 +1,8 @@
+.app {
+    display: flex;
+    flex-direction: column; /* mode mobile par défaut */
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 16px;
+    justify-content: center;
+  }
