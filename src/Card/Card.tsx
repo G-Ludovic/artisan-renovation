@@ -10,7 +10,7 @@ function Card ({ title, speciality, imgSrc }: Props) {
     return (
         <figure>
             <img src={imgSrc}/>
-            <h1>{title}</h1>
+            <h2>{title}</h2>
         </figure>
     )
 }
