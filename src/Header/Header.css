@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebded4;
+}
+
+header img {
+    height: 150px;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+header a {
+    text-decoration: none;
+    color: #4a3931;
+    font-weight: bold;
+    font-size: large;
+}
