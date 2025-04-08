@@ -17,7 +17,7 @@ figure {
         display: flex;
         justify-content: center;
         color: #4a3931;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
 
@@ -26,7 +26,7 @@ h1 {
     padding: 16px;
     color: #4a3931;
     justify-content: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .app {
@@ -39,7 +39,11 @@ h1 {
 /* Desktop : 3 colonnes */
 @media (min-width: 768px) and (min-width: 1024px) {
     .app {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: minmax(300px, 325px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(300px, 325px);
+    }
+
+    main {
+        height: 90vh;
     }
 }

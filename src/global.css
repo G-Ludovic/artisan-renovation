@@ -6,6 +6,12 @@ body {
     margin: 0;
 }
 
-main {
-    height: 90vh;
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
 }
