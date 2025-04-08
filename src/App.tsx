@@ -41,8 +41,7 @@ const arrayOfArtisans = [
 ]
 
 function App() {
-  /*const [metierInfo, setMetierInfo] = useState()
-  function onCardClick()*/
+
 
 
   const [selectedOption, setSelectedOption] = useState("");
