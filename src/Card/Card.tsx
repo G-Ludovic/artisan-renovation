@@ -7,18 +7,22 @@ interface Props {
     description: string;
     etudes: string;
     salaire: string;
+    bgColor?: string;
 }
 
-function Card({ title, speciality, imgSrc, description, etudes, salaire }: Props) {
+function Card({ title, speciality, imgSrc, description, etudes, salaire, bgColor }: Props) {
     return (
-        <figure>
+        <figure className="card" style={{ backgroundColor: bgColor || "#f0f0f0" }}>
+
             <img src={imgSrc} />
-            <h2>{title}</h2>
-            <p>{element.description}</p>
-            <p>{element.etudes}</p>
-            <p>{element.salaire}</p>
+            <figcaption>
+                <h2>{title}</h2>
+            </figcaption>
+            <p>{description}</p>
+            <p>{etudes}</p>
+            <p>{salaire}</p>
         </figure>
-    )
-}
+    );
+};
 
 export default Card;
